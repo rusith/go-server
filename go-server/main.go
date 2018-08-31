@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Main function invoked")	
+	fmt.Pintln("Main function invoked")	
 }
