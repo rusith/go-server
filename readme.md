@@ -9,6 +9,6 @@ This is an application server which uses MongoDB as the database and GraphQL as 
 
 Things to do
 
-- [ ] Create a web server that works
+- [ ] Create a web server that works - WIP
 - [ ] Integrate MongoDB
 - [ ] Integrate GraphQL
