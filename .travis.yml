@@ -7,7 +7,6 @@ go:
 git:
   depth: 1
 before_install:
-- cd go-server
 - go get -t -v ./...
 
 notifications:
