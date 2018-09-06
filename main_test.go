@@ -6,6 +6,6 @@ func TestStartQuery(t *testing.T) {
 	StartQuery()
 }
 
-func TestMain(t *testing.T) {
+func TestMainFunc(t *testing.T) {
 	go main()
 }
