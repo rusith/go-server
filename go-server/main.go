@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/rusith/go-server/go-server/queries"
 	"github.com/graph-gophers/graphql-go"
 	"github.com/graph-gophers/graphql-go/relay"
+	"github.com/rusith/go-server/go-server/queries"
 	"log"
 	"net/http"
 	"strings"
