@@ -8,3 +8,14 @@ func TestUserShouldReturnValue(t *testing.T) {
 		t.Fatal("User returned nil")
 	}
 }
+
+func TestQuery_GetQuery(t *testing.T) {
+	u := (&Query{}).GetQuery()
+	if u != `
+	type Query {
+		user: User
+	}
+` {
+		t.Fatal("User query is invalid")
+	}
+}

@@ -11,6 +11,5 @@ func (_ *User) GetQuery() string {
 	return `
 	type User {
 		firstName: String!
-	}
-`
+	}`
 }

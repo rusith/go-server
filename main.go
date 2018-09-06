@@ -1,4 +1,4 @@
-package go_server
+package main
 
 import (
 	"github.com/graph-gophers/graphql-go"
@@ -9,7 +9,7 @@ import (
 	"strings"
 )
 
-func main() {
+func StartQuery() {
 	qs := []string {
 		(*queries.Query).GetQuery(nil),
 		(*queries.User).GetQuery(nil),
@@ -25,6 +25,10 @@ func main() {
 		queryBuilder.WriteString(q)
 	}
 	schema := graphql.MustParseSchema(queryBuilder.String(), &queries.Query{})
-	http.Handle("/queries", &relay.Handler{Schema: schema})
+	http.Handle("/q", &relay.Handler{Schema: schema})
+}
+
+func main() {
+	StartQuery()
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }

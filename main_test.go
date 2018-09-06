@@ -1,7 +1,7 @@
-package go_server
+package main
 
 import "testing"
 
-func TestSayHello(t *testing.T) {
-
+func TestStartQuery(t *testing.T) {
+	StartQuery()
 }
