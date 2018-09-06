@@ -1,11 +1,20 @@
+env:
+  - CODECOV_TOKEN="9fd19799-322b-4a66-b6c7-5ae74b51b05e"
 sudo: false
 language: go
 go:
  - "1.10"
 git:
   depth: 1
-install: true
+before_install:
+- cd go-server
+- go get -t -v ./...
+
 notifications:
   email: false
+
 script:
- - go build ./go-server/main.go
+- go test -race -coverprofile=coverage.txt -covermode=atomic
+
+after_success:
+- bash <(curl -s https://codecov.io/bash)
