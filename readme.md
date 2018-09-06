@@ -5,9 +5,3 @@
 [![codecov](https://codecov.io/gh/rusith/go-server/branch/develop/graph/badge.svg)](https://codecov.io/gh/rusith/go-server)
 
 This is an application server which uses MongoDB as the database and GraphQL as the data transfer technology. this is a base code which can be used to start a new project on
-
-Things to do
-
-- [ ] Create a web server that works - WIP
-- [ ] Integrate MongoDB
-- [ ] Integrate GraphQL
