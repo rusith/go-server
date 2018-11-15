@@ -1,13 +1,13 @@
 package queries
 
 // The user type, represents a user
-type User struct { firstName string }
+type UserType struct { firstName string }
 
-func (u *User) FirstName() string {
+func (u *UserType) FirstName() string {
 	return u.firstName
 }
 
-func (_ *User) GetQuery() string {
+func (_ *UserType) GetQuery() string {
 	return `
 	type User {
 		firstName: String!

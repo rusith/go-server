@@ -12,8 +12,7 @@ import (
 func StartQuery() {
 	qs := []string {
 		(*queries.Query).GetQuery(nil),
-		(*queries.User).GetQuery(nil),
-
+		(*queries.UserType).GetQuery(nil),
 	}
 	var queryBuilder strings.Builder
 	queryBuilder.WriteString(`

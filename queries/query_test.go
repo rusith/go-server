@@ -1,21 +1,13 @@
 package queries
 
-import "testing"
+import (
+	"github.com/rusith/go-server/services"
+	"testing"
+)
 
 func TestUserShouldReturnValue(t *testing.T) {
-	u := (&Query{}).User()
+	u := ((*Query).New(nil, services.UserService{ })).User()
 	if u == nil {
 		t.Fatal("User returned nil")
-	}
-}
-
-func TestQuery_GetQuery(t *testing.T) {
-	u := (&Query{}).GetQuery()
-	if u != `
-	type Query {
-		user: User
-	}
-` {
-		t.Fatal("User query is invalid")
 	}
 }
