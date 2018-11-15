@@ -1,0 +1,10 @@
+{ Badges
+<a href="https://travis-ci.org/rusith/go-server"><img src="https://travis-ci.org/rusith/go-server.svg?branch=develop" alt="Build Status" /></a>
+<a href="https://codebeat.co/projects/github-com-rusith-go-server-develop"><img src="https://codebeat.co/badges/eb6f2b62-3990-45f8-b71f-7a633bdc6fae" alt="codebeat badge" /></a>
+<a href="https://codecov.io/gh/rusith/go-server"><img src="https://codecov.io/gh/rusith/go-server/branch/develop/graph/badge.svg" alt="codecov" /></a>
+}
+
+{ Description
+Go Server is a back end template code whcih can be used to create a go web server which uses MongoDB as the database and GraphQL as the data transport technology.
+This is a reusable template code intended to build a server code on.
+}
